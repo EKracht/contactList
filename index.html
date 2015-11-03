@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact List</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/yeti/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Contact List</h1>
+
+</br>
+
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id='email' placeholder="Email">
+    <input type="number" id='phone' placeholder="Phone">
+    <input type="text" id='address' placeholder="Address">
+    <button class="btn btn-success" id='add'>Add</button>
+  </div>
+
+</br>
+
+  <div class="container">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th class='col-xs-2'>Name</th>
+          <th class='col-xs-3'>Email</th>
+          <th class='col-xs-2'>Phone Number</th>
+          <th class='col-xs-3'>Address</th>
+          <th class='col-xs-1'>Edit</th>
+          <th class='col-xs-1'>Remove</th>
+        </tr>
+      </thead>
+      <tbody id='list'></tbody>
+      <tr id='sample'>
+        <td class='name'></td>
+        <td class='email'></td>
+        <td class='phone'></td>
+        <td class='address'></td>
+        <td><a class='edit' href="#" data-target="#myModal" data-toggle="modal"><i class="fa fa-pencil"></i></a></td>
+        <td><a class='remove' href="#"><i class='fa fa-trash'></i></a></td>
+      </tr>
+    </table>
+  </div> 
+  
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body" style="width:100%">
+            <input class="newName" type="text" placeholder="Name">
+          </br>
+            <input class="newEmail" type="text" placeholder="Email">
+          </br>
+            <input class="newPhone" type="number" placeholder="Phone">
+          </br>
+            <input class="newAddress" type="text" placeholder="Address">
+          <br><br>
+          <p class="msg" align="center" style="font-size:20px"></p>
+          <br>
+          <button type="button" class="btn btn-primary btn-lg center-block submit" data-dismiss="modal">Save</button>
+          <br><br>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
